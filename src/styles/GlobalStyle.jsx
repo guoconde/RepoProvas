@@ -44,13 +44,55 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  a {
-    text-decoration: none;
-  }
   button{
+    all: unset;
+
+    height: 36px;
+
+    background-color: #1976D2;
+
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 0 16px;
+
     cursor: pointer;
   }
+  a {
+    color: #4673CACC;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  input {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: 2px solid #c6c6c6;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
 
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    padding: 0 15px;
+
+    ::placeholder {
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
   * {
     padding: 0;
     margin: 0;
@@ -60,13 +102,14 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     background-color: #e5e5e5;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
   body::-webkit-scrollbar {
     display: none;
   }
+
 `;
 
 export default GlobalStyle;

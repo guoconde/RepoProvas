@@ -1,4 +1,5 @@
 import React from 'react';
+import Line from '../../components/Line/Line';
 import Logo from '../../images/Logo.png';
 import RegisterForm from './RegisterForm';
 
@@ -8,10 +9,7 @@ export default function Register() {
       <img src={Logo} alt="logo_repo_provas" />
       <h1>Cadastro</h1>
       <button type="submit">ENTRAR COM O GITHUB</button>
-      <div>
-        <div />
-        <p>ou</p>
-      </div>
+      <Line visibleLabel />
       <RegisterForm />
     </div>
   );

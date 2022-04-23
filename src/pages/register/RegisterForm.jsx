@@ -46,7 +46,7 @@ export default function RegisterForm() {
       {errors.passwordConfirm && <span>{errors.passwordConfirm.message}</span>}
       <div>
         <Link to="/">Já possui cadastro?</Link>
-        <input type="submit" value="Cadastrar" />
+        <button type="submit">cadastrar</button>
       </div>
     </form>
   );
