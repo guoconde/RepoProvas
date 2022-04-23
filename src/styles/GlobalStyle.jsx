@@ -59,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     color: white;
 
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
     padding: 0 16px;
@@ -77,6 +77,7 @@ const GlobalStyle = createGlobalStyle`
     height: 56px;
     border-radius: 5px;
     border: 2px solid #c6c6c6;
+    color: #6c6c6c;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
 
     font-family: 'Poppins';
@@ -87,6 +88,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 15px;
 
     ::placeholder {
+      color: #6c6c6c;
       font-family: 'Poppins';
       font-size: 16px;
       font-weight: 500;
@@ -103,6 +105,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background-color: #e5e5e5;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
