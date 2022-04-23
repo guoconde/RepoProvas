@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 500px;
+  width: 60%;
   height: 100vh;
 
   margin: 0 auto;
@@ -11,13 +11,17 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  > div {
+    width: 100%;
+  }
 `;
 
 export const ButtonGithub = styled.button`
-  width: 500px;
-
+  width: 100%;
   background-color: #424445;
 
+  padding: 0;
   margin: 35px 0 15px 0;
 `;
 

@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
   button{
     all: unset;
 
-    height: 36px;
+    height: 45px;
 
     background-color: #1976D2;
 
@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
-    padding: 0 16px;
+    padding: 0 22px;
 
     cursor: pointer;
   }
