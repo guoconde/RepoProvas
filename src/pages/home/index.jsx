@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Header from '../../components/HomeHeader';
-import Line from '../../components/Line/Line';
+import Add from './add';
+import Discipline from './discipline';
+import Professor from './professor';
 
 export default function Home() {
+  const [renderPage, setRenderPage] = useState('discipline');
+
+  const handlePath = (value) => {
+    setRenderPage(value);
+  };
   return (
     <HomeContainer>
       <Header />
-      <Line visibleLabel={false} />
+      {renderPage === 'discipline' && <Discipline handlePath={handlePath} path="discipline" />}
+      {renderPage === 'professor' && <Professor handlePath={handlePath} path="professor" /> }
+      {renderPage === 'add' && <Add handlePath={handlePath} path="add" />}
     </HomeContainer>
   );
 }
